@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- SITE META -->
+    <title></title>
+    <!-- BOOTSTRAP STYLES -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <!-- TEMPLATE STYLES -->
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <!-- TEMPLATE STYLES -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body class="leftside">
+
+
+    <div id="loading">
+        <div id="loading-center">
+            <img src="images/loder.gif" alt="">
+        </div>
+    </div>
+
+
+    <!-- START SITE -->
+    <div id="wrapper">
+        <div class="row-offcanvas row-offcanvas-left">
+            <div id="sidebar-fix" class="sidebar-offcanvas">
+                <header id="vertical" class="header header-style-1">
+                    <nav class="navbar navbar-default yamm">
+                        <div class="container-f">
+                            <div class="navbar-header">
+                                <div class="site-logo text-center">
+                                    <a class="navbar-brand" href="#">
+                                            <img class="img-responsive" src="images/footer-logo.png" alt="">
+                                        </a>
+                                </div>
+                            </div>
+                            <div id='cssmenu'>
+                                <ul>
+                                   <li class='has-sub active'><a href='#'><span>Introduction</span></a>
+                                      <ul>
+                                        <li><a href='#basic-installation'><span>Basic Installation</span></a></li>
+                                         <li><a href='#basic-structure'><span>HTML Structure</span></a></li>
+                                         <li><a href="#basic-css">CSS Structure</a></li>
+                                            <li><a href="#basic-js">Javascript Structure</a></li>
+                                            <li><a href="#basic-favicon">For Favicon icon</a></li>
+                                            <li><a href="#basic-logo">For Logo</a></li>
+                                            <li><a href="#basic-copyright-text">For copyright text</a></li>
+                                         <li class='last'><a href='#basic-fonts'><span>For Changing Fonts</span></a></li>
+                                      </ul>
+                                   </li>
+                                   <li class='has-sub'><a href='#'><span>Helper classes</span></a>
+                                      <ul>
+                                         <li><a href="#basic-padding">For section padding</a></li>
+                                            <li><a href="#basic-background">For Background color</a></li>
+                                      </ul>
+                                   </li>
+                                    <li><a href="#basic-components"><span>Bootstrap Components</span></a></li>
+                                    <li><a href="#basic-form"><span>For Contact Form</span></a></li>
+                                    <li><a href="#basic-carousel"><span>For slick slider</span></a></li>
+                                   <li class='last'><a href='#basic-source'><span>Source & Credits</span></a></li>
+                                </ul>
+                            </div>
+                            <!--/.nav-collapse -->
+                        </div>
+                        <!--/.container-fluid -->
+                    </nav><!-- end nav -->
+                </header><!-- end header -->
+            </div><!-- end sidebar -->
+            <div id="main">
+                <section class="intro-banner" style="background: url(images/bg/01.jpg); background-size: cover; background-repeat: no-repeat;">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <a href="#"><img src="images/logo.png" class="img-responsive" alt=""></a>
+                                <h1 class="text-white">USER GUIDE</h1>
+                                <p class="text-white">On behalf of GraphicPlate team, we would like to thank you for purchasing this item. Your support encourages us to build better items and continuously bring value to our products. This documentation file covers all the information needed to install and use this Template. You'll find everything you need to know to create a stunning and beautiful website in minutes.</p>
+                                <p class="text-white">Sumex is a HTML/CSS template based on <b>Bootstrap 4+ framework</b>. This documentation will give you an understanding of how Sumex template is structured and guide you in performing common functions. If you require further assistance not covered in this documentation, please contact us in our Support Click here to contact us</p>
+                                <ul>
+                                    <li>Created: 26 January 2020</li>
+                                    <li>By: graphicplate</li>
+                                    <li>Email: <a href="mailto:evnybd95@gmail.com">evnybd95@gmail.com</a></li>
+                                    <li>HelpDesk: <a target="_blank" href="http:/themeforest.net/user/graphicplate/portfolio">http:/themeforest.net/user/graphicplate/portfolio</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="basic-installation">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <h2 class="heading-title">Basic Installation</h2>
+                                <p>Steps to be follow for getting started with the template:</p>
+                                <ol>
+                                    <li>Open <span class="text-red">... /sumex</span> Folder to find all the Templates Files</li>
+                                    <li>You'll have to upload these file using a FTP on your server</li>
+                                    <li>Make sure you maintain the structure while uploading the required files/folders:
+                                        <ul>
+                                            <li><i class="fa fa-folder-open" aria-hidden="true"></i><span class="text-red">sumex/css</span> - Stylesheets Folder</li>
+                                            <li><i class="fa fa-folder-open" aria-hidden="true"></i><span class="text-red">sumex/favicon</span> - Favicon Folder</li>
+                                            <li><i class="fa fa-folder-open" aria-hidden="true"></i><span class="text-red">sumex/img</span> - Images Folder</li>
+                                            <li><i class="fa fa-folder-open" aria-hidden="true"></i><span class="text-red">sumex/js</span> - Javacripts Folder</li>
+                                            <li><i class="fa fa-folder-open" aria-hidden="true"></i><span class="text-red">sumex/mail</span> - PHP Mail File</li>
+                                            <li><i class="fa fa-folder-open" aria-hidden="true"></i><span class="text-red">sumex/webfonts</span> - Fonts Awesome Folder</li>
+
+                                            <li><i class="fa fa-folder-open" aria-hidden="true"></i><span class="text-red">sumex/index.html</span> - Index File</li>
+                                            <li><i class="fa fa-folder-open" aria-hidden="true"></i><span class="text-red">sumex/blog_details.html</span> - Blog Details</li>
+                                            <li><i class="fa fa-folder-open" aria-hidden="true"></i><span class="text-red">sumex/portfolio_details.html</span> - Portfolio Details</li>
+                                        </ul>
+                                        Other files can be used according to your convenience. </li>
+                                    <li>Now that you have followed these steps your basic installation is complete and ready to flaunt your site to the world.</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="basic-structure">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <h2 class="heading-title">HTML Structure</h2>
+                                <p>Here is the <strong>general HTML structure of the template:</strong></p>
+                                <pre class="prettyprint lang-html linenums">
+<span>&lt;!</span><span>DOCTYPE</span><span> </span><span>html</span><span>&gt;</span>
+
+<span>&lt;</span><span>html</span><span> </span><span>lang</span><span>=</span><span>"en"</span><span>&gt;</span>
+
+<span>&lt;</span><span>head</span><span>&gt;</span>
+
+<span class="pln">
+[Page meta, page css, page js files, page title etc...]
+</span>
+
+<span>&lt;/</span><span>head</span><span>&gt;</span>
+
+<span>&lt;</span><span>body</span><span>&gt;</span>
+
+<span>    </span><span>&lt;!-- Header Navigation Section Start --&gt;</span>
+<span>    &lt;</span><span>header</span><span> </span><span>id</span><span>=</span><span>"navigation-section"</span><span> </span><span>class</span><span>=</span><span>"headroom header--fixed"</span><span>&gt;</span>
+     [HEADER NAVIGATION]
+<span>    &lt;/</span><span>header</span><span>&gt;</span><span>&lt;!-- Header Navigation Section End --&gt;
+</span>
+
+<span>    </span><span>&lt;!-- Hero Section Start --&gt;</span>
+<span>    &lt;</span><span>section</span><span> </span><span>id</span><span>=</span><span>"hero-section"</span><span> </span><span>class</span><span>=</span><span>"section-padding white-bg"</span><span>&gt;</span>
+     [HERO SECTION CONTENT]
+<span>    &lt;/</span><span>section</span><span>&gt;</span><span>&lt;!-- Hero Section End --&gt;</span>
+
+<span>    </span><span>&lt;!-- About Section Start --&gt;</span>
+<span>    &lt;</span><span>section</span><span> </span><span>id</span><span>=</span><span>"about-section"</span><span> </span><span>class</span><span>=</span><span>"section-padding gray-bg"</span><span>&gt;</span>
+     [ABOUT SECTION CONTENT]
+<span>    &lt;/</span><span>section</span><span>&gt;</span><span>&lt;!-- About Section End --&gt;</span>
+
+
+<span>    </span><span>&lt;!-- Service Section Start  --&gt;</span>
+<span>    &lt;</span><span>section</span><span> </span><span>id</span><span>=</span><span>"service-section"</span><span> </span><span>class</span><span>=</span><span>"section-padding"</span><span>&gt;</span>
+     [SERVICE SECTION CONTENT]
+<span>    &lt;/</span><span>section</span><span>&gt; </span><span>&lt;!-- Service Section End  --&gt;</span>
+
+
+<span>    </span><span>&lt;!-- Skill Section Start  --&gt;</span>
+<span>    &lt;</span><span>section</span><span> </span><span>id</span><span>=</span><span>"skill-section"</span><span> </span><span>class</span><span>=</span><span>"section-padding gray-bg"</span><span>&gt;</span>
+     [SKILL SECTION CONTENT]
+<span>    &lt;/</span><span>section</span><span>&gt; </span><span>&lt;!-- Skill Section End  --&gt;</span>
+
+
+<span>    </span><span>&lt;!-- Portfolio Section Start  --&gt;</span>
+<span>    &lt;</span><span>section</span><span> </span><span>id</span><span>=</span><span>"portfolio-section"</span><span> </span><span>class</span><span>=</span><span>"section-padding"</span><span>&gt;</span>
+     [PORTFOLIO SECTION CONTENT]
+<span>    &lt;/</span><span>section</span><span>&gt;</span><span>&lt;!-- Portfolio Section End  --&gt;
+</span>
+
+<span>    </span><span>&lt;!-- Price Section Start --&gt;</span>
+<span>    &lt;</span><span>section</span><span> </span><span>id</span><span>=</span><span>"price-section"</span><span> </span><span>class</span><span>=</span><span>"section-padding gray-bg"</span><span>&gt;</span>
+     [PRICE SECTION CONTENT]
+<span>    &lt;/</span><span>section</span><span>&gt; </span><span>&lt;!-- Price Section End --&gt;
+</span>
+
+<span>    </span><span>&lt;!-- Testimonial Section Start --&gt;</span>
+<span>    &lt;</span><span>section</span><span> </span><span>id</span><span>=</span><span>"testimonial-section"</span><span> </span><span>class</span><span>=</span><span>"section-padding"</span><span>&gt;</span>
+     [TESTIMONIAL SECTION CONTENT]
+<span>    &lt;/</span><span>section</span><span>&gt;</span><span>&lt;!-- Testimonial Section End --&gt;
+</span>
+
+<span>    </span><span>&lt;!-- Blog Section Start --&gt;</span>
+<span>    &lt;</span><span>section</span><span> </span><span>id</span><span>=</span><span>"blog-section"</span><span> </span><span>class</span><span>=</span><span>"section-padding gray-bg"</span><span>&gt;</span>
+     [BLOG SECTION CONTENT]
+<span>    &lt;/</span><span>section</span><span>&gt; </span><span>&lt;!-- Blog Section End --&gt;
+</span>
+
+<span>    </span><span>&lt;!-- Contact form Section Start --&gt;</span>
+<span>    &lt;</span><span>section</span><span> </span><span>id</span><span>=</span><span>"contact-form-section"</span><span> </span><span>class</span><span>=</span><span>"section-padding"</span><span>&gt;</span>
+     [CONTACT SECTION CONTENT]
+<span>    &lt;/</span><span>section</span><span>&gt; </span><span>&lt;!-- Contact form Section End --&gt;
+</span>
+
+<span>    </span><span>&lt;!-- Footer Navigation Section Start --&gt;</span>
+<span>    &lt;</span><span>section</span><span> </span><span>id</span><span>=</span><span>"footer-navigation-section"</span><span> </span><span>class</span><span>=</span><span>"section-padding-bottom"</span><span>&gt;</span>
+     [FOOTER NAVIGATION SECTION CONTENT]
+<span>    &lt;/</span><span>section</span><span>&gt; </span><span>&lt;!-- Footer Navigation Section End --&gt;
+</span>
+
+<span>    </span><span>&lt;!-- Footer Copyright Section Start --&gt;</span>
+<span>    &lt;</span><span>footer</span><span> </span><span>id</span><span>=</span><span>"footer-section"</span><span>&gt;</span>
+     [FOOTER COPYRIGHT CONTENT]
+<span>    &lt;/</span><span>footer</span><span>&gt; </span><span>&lt;!-- Footer Copyright Section End --&gt;</span>
+
+<span>    </span><span>&lt;!-- material-scrolltop button --&gt;</span>
+<span>    &lt;</span><span>button</span><span> </span><span>class</span><span>=</span><span>"material-scrolltop"</span><span> </span><span>type</span><span>=</span><span>"button"</span><span>&gt;
+</span><span class="pln">     [BACK TO TOP CONTENT]
+</span><span>    &lt;/</span><span>button</span><span>&gt;</span>
+    [PAGE JAVASCRIPTS HERE]
+</span><span></span><span>&lt;/</span><span>body</span><span>&gt;</span>
+
+<span>&lt;/</span><span>html</span><span>&gt;</span>
+
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+                <section id="basic-css">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <h2 class="heading-title">CSS Structure</h2>
+                                <p>Here is the <strong>general CSS structure of the template:</strong></p>
+                                <pre class="prettyprint lang-html linenums">
+<span>    </span><span>&lt;!-- Bootstrap CSS --&gt;</span>
+<span>    &lt;</span><span>link</span><span> </span><span>rel</span><span>=</span><span>"stylesheet"</span><span> </span><span>href</span><span>=</span><span>"css/bootstrap.min.css"</span><span>&gt;</span>
+
+<span>    </span><span>&lt;!-- Font Awesome CSS --&gt;</span>
+<span>    &lt;</span><span>link</span><span> </span><span>rel</span><span>=</span><span>"stylesheet"</span><span> </span><span>href</span><span>=</span><span>"css/all.css"</span><span>&gt;</span>
+
+<span>    </span><span>&lt;!-- Owl Carousel CSS --&gt;</span>
+<span>    &lt;</span><span>link</span><span> </span><span>rel</span><span>=</span><span>"stylesheet"</span><span> </span><span>href</span><span>=</span><span>"css/owl.carousel.min.css"</span><span>&gt;</span>
+<span>    &lt;</span><span>link</span><span> </span><span>rel</span><span>=</span><span>"stylesheet"</span><span> </span><span>href</span><span>=</span><span>"css/owl.theme.default.min.css"</span><span>&gt;</span>
+
+<span>    </span><span>&lt;!-- SlickNav CSS --&gt;</span>
+<span>    &lt;</span><span>link</span><span> </span><span>rel</span><span>=</span><span>"stylesheet"</span><span> </span><span>href</span><span>=</span><span>"css/slicknav.min.css"</span><span>&gt;</span>
+
+<span>    </span><span>&lt;!-- Reset CSS --&gt;</span>
+<span>    &lt;</span><span>link</span><span> </span><span>rel</span><span>=</span><span>"stylesheet"</span><span> </span><span>href</span><span>=</span><span>"css/css-reset.css"</span><span>&gt;</span>
+
+<span>    </span><span>&lt;!-- Progressbar CSS --&gt;</span>
+<span>    &lt;</span><span>link</span><span> </span><span>rel</span><span>=</span><span>"stylesheet"</span><span> </span><span>href</span><span>=</span><span>"css/jquery.lineProgressbar.css"</span><span>&gt;</span>
+
+<span>    </span><span>&lt;!-- VinoBox CSS --&gt;</span>
+<span>    &lt;</span><span>link</span><span> </span><span>rel</span><span>=</span><span>"stylesheet"</span><span> </span><span>href</span><span>=</span><span>"css/venobox.css"</span><span>&gt;</span>
+
+<span>    </span><span>&lt;!-- ScrolltoTop CSS --&gt;</span>
+<span>    &lt;</span><span>link</span><span> </span><span>rel</span><span>=</span><span>"stylesheet"</span><span> </span><span>href</span><span>=</span><span>"css/material-scrolltop.css"</span><span>&gt;</span>
+
+<span>    </span><span>&lt;!-- Magnific CSS --&gt;</span>
+<span>    &lt;</span><span>link</span><span> </span><span>rel</span><span>=</span><span>"stylesheet"</span><span> </span><span>href</span><span>=</span><span>"css/magnific-popup.css"</span><span>&gt;</span>
+
+<span>    </span><span>&lt;!-- Main CSS --&gt;</span>
+<span>    &lt;</span><span>link</span><span> </span><span>rel</span><span>=</span><span>"stylesheet"</span><span> </span><span>href</span><span>=</span><span>"css/style.css"</span><span>&gt;</span>
+
+<span>    </span><span>&lt;!-- Responsive CSS --&gt;</span>
+<span>    &lt;</span><span>link</span><span> </span><span>rel</span><span>=</span><span>"stylesheet"</span><span> </span><span>href</span><span>=</span><span>"css/responsive.css"</span><span>&gt;</span>
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+
+                <section id="basic-js">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <h2 class="heading-title">Javascript Structure</h2>
+                                <p>Here is the <strong>general Javascript structure of the template:</strong></p>
+                                <pre class="prettyprint lang-html linenums">
+<span>    </span><span>&lt;!-- Jquery JS --&gt;</span>
+<span>    &lt;</span><span>script</span><span> </span><span>src</span><span>=</span><span>"js/jquery-3.3.1.min.js"</span><span>&gt;</span><span>&lt;</span><span>/</span><span>script</span><span>&gt;</span>
+
+<span>    </span><span>&lt;!-- Popper JS --&gt;</span>
+<span>    &lt;</span><span>script</span><span> </span><span>src</span><span>=</span><span>"js/popper.min.js"</span><span>&gt;</span><span>&lt;</span><span>/</span><span>script</span><span>&gt;</span>
+
+<span>    </span><span>&lt;!-- Bootstrap JS --&gt;</span>
+<span>    &lt;</span><span>script</span><span> </span><span>src</span><span>=</span><span>"js/bootstrap.min.js"</span><span>&gt;</span><span>&lt;</span><span>/</span><span>script</span><span>&gt;</span>
+
+<span>    </span><span>&lt;!-- Waypoint JS --&gt;</span>
+<span>    &lt;</span><span>script</span><span> </span><span>src</span><span>=</span><span>"js/jquery.waypoints.js"</span><span>&gt;</span><span>&lt;</span><span>/</span><span>script</span><span>&gt;</span>
+
+<span>    </span><span>&lt;!-- Owl Carousel JS --&gt;</span>
+<span>    &lt;</span><span>script</span><span> </span><span>src</span><span>=</span><span>"js/owl.carousel.min.js"</span><span>&gt;</span><span>&lt;</span><span>/</span><span>script</span><span>&gt;</span>
+
+<span>    </span><span>&lt;!-- Slick Nav Mobile Menu JS --&gt;</span>
+<span>    &lt;</span><span>script</span><span> </span><span>src</span><span>=</span><span>"js/jquery.slicknav.min.js"</span><span>&gt;</span><span>&lt;</span><span>/</span><span>script</span><span>&gt;</span>
+
+<span>    </span><span>&lt;!-- Filter JS --&gt;</span>
+<span>    &lt;</span><span>script</span><span> </span><span>src</span><span>=</span><span>"js/ling-gallery-filter.js"</span><span>&gt;</span><span>&lt;</span><span>/</span><span>script</span><span>&gt;</span>
+
+<span>    </span><span>&lt;!-- ProgressBar JS --&gt;</span>
+<span>    &lt;</span><span>script</span><span> </span><span>src</span><span>=</span><span>"js/jquery.lineProgressbar.js"</span><span>&gt;</span><span>&lt;</span><span>/</span><span>script</span><span>&gt;</span>
+
+<span>    </span><span>&lt;!-- Zoom Image JS --&gt;</span>
+<span>    &lt;</span><span>script</span><span> </span><span>src</span><span>=</span><span>"js/venobox.min.js"</span><span>&gt;</span><span>&lt;</span><span>/</span><span>script</span><span>&gt;</span>
+
+<span>    </span><span>&lt;!-- ScrollToTop JS --&gt;</span>
+<span>    &lt;</span><span>script</span><span> </span><span>src</span><span>=</span><span>"js/material-scrolltop.js"</span><span>&gt;</span><span>&lt;</span><span>/</span><span>script</span><span>&gt;</span>
+
+<span>    </span><span>&lt;!-- Smooth Navigation Height JS --&gt;</span>
+<span>    &lt;</span><span>script</span><span> </span><span>src</span><span>=</span><span>"js/headroom.js"</span><span>&gt;</span><span>&lt;</span><span>/</span><span>script</span><span>&gt;</span>
+
+<span>    </span><span>&lt;!-- Mesonary JS --&gt;</span>
+<span>    &lt;</span><span>script</span><span> </span><span>src</span><span>=</span><span>"js/isotope.pkgd.min.js"</span><span>&gt;</span><span>&lt;</span><span>/</span><span>script</span><span>&gt;</span>
+
+<span>    </span><span>&lt;!--PopUp Video JS --&gt;</span>
+<span>    &lt;</span><span>script</span><span> </span><span>src</span><span>=</span><span>"js/jquery.magnific-popup.min.js"</span><span>&gt;</span><span>&lt;</span><span>/</span><span>script</span><span>&gt;</span>
+
+<span>    </span><span>&lt;!-- Active scroll link JS --&gt;</span>
+<span>    &lt;</span><span>script</span><span> </span><span>src</span><span>=</span><span>"js/jquery.nav.js"</span><span>&gt;</span><span>&lt;</span><span>/</span><span>script</span><span>&gt;</span>
+
+<span>    </span><span>&lt;!-- Active Typing JS --&gt;</span>
+<span>    &lt;</span><span>script</span><span> </span><span>src</span><span>=</span><span>"js/typing-animation.js"</span><span>&gt;</span><span>&lt;</span><span>/</span><span>script</span><span>&gt;</span>
+<span>    &lt;</span><span>script</span><span> </span><span>src</span><span>=</span><span>"js/active-typing.js"</span><span>&gt;</span><span>&lt;</span><span>/</span><span>script</span><span>&gt;</span>
+
+<span>    </span><span>&lt;!-- Main Js JS --&gt;</span>
+<span>    &lt;</span><span>script</span><span> </span><span>src</span><span>=</span><span>"js/main.js"</span><span>&gt;</span><span>&lt;</span><span>/</span><span>script</span><span>&gt;</span>
+
+<span>    </span><span>&lt;!-- Smooth JS --&gt;</span>
+<span>    &lt;</span><span>script</span><span> </span><span>src</span><span>=</span><span>"js/smooth-scroll.js"</span><span>&gt;</span><span>&lt;</span><span>/</span><span>script</span><span>&gt;</span>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="basic-favicon">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <h2 class="heading-title">For Favicon icon</h2>
+                                <p>Favicon is an icon associated with the URL that is displayed at various places, such as in a browser’s address bar or next to the site name in a bookmark list.</p>
+            <p>You can add a Favicon to your Website using the following code:</p>
+            <pre class="prettyprint lang-html linenums">
+<span>&lt;!-- For Fevicon --&gt;</span>
+<span>&lt;</span><span>link</span><span> </span><span>rel</span><span>=</span><span>"icon"</span><span> </span><span>type</span><span>=</span><span>"image/png"</span><span> </span><span>sizes</span><span>=</span><span>"16x16"</span><span> </span><span>href</span><span>=</span><span>"fevicon/fevicon.png"</span><span>&gt;</span>
+</pre>
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="basic-logo">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <h2 class="heading-title">For Logo</h2>
+                                <p>The Logo Container can be found in the Header Container - <span class="atv"> #navigation-section</span> and Footer Logo can be found in the Footer Navigation Container - <span class="atv"> #footer-navigation-section</span>. Replace <span class="atv">"logo.png" or "footer-logo.png"</span> with your own logo image URL.</p>
+            <pre class="prettyprint lang-html linenums">
+&lt;a class="logo" href="index.html"&gt;
+    &lt;img src="img/logo.png" alt="logo"&gt;
+&lt;/a&gt;
+<br>
+&lt;div class="footer-logo"&gt;
+    &lt;a href="index.html"&gt;
+        &lt;img src="img/footer-logo.png" alt=""&gt;
+    &lt;/a&gt;
+&lt;/div&gt;
+</pre>
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="basic-copyright-text">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <h2 class="heading-title">For copyright text</h2>
+                                <p>The copyright can be found in Footer Section - <span class="atv">#footer-section</span>. Replace <span class="atv">"Sumex By
+GraphicPlate" </span> with your own copyright text.</p>
+            <pre class="prettyprint lang-html linenums">
+<span>&lt;</span><span>p</span><span> </span><span>class</span><span>=</span><span>"copy-right-text text-center"</span><span>&gt;
+Copyright ©</span><span>;</span><span> 2020 Sumex By &lt;</span><span>a </span><span>href</span><span>=</span><span>""</span><span>&gt;GraphicPlate&lt;/</span><span>a</span><span>&gt; . All Rights Reserved</span>
+<span>&lt;/</span><span>p</span><span>&gt;</span>
+</pre>
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+
+<section id="basic-fonts">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <h2 class="heading-title">For Changing Fonts</h2>
+            <p> You can add/change the site font, from all fonts used from <a href="https://www.google.com/fonts"> Google Web Font Services,</a> with the one that suits you the best. You can find the font link in top of the <span class="atv">style.css</span>  file. See example below:</p>
+            <pre class="prettyprint lang-html linenums">
+&lt;!-- google font --&gt; 
+@import url('https://fonts.googleapis.com/css?family=Muli:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i|Rubik:300,300i,400,400i,500,500i,700,700i,900,900i&display=swap');</pre>
+            <br>
+            <p>To include new font you can simply add another link like this: </p>
+            <pre class="prettyprint lang-html linenums">
+&lt;!-- Muli font --&gt;
+@import url('https://fonts.googleapis.com/css?family=Muli:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&display=swap')
+&lt;!-- Rubik font --&gt;
+@import url('https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,500,500i,700,700i,900,900i&display=swap');
+</pre>
+            <br>
+            <p>In order to change the fonts, you will need to edit the above links with your custom font, You can easily use <a href="https://www.google.com/fonts"> Google Web Font Services</a> if you plan to use a Google Font or remove it completely. If you plan to use a self hosted font, here is an Example of using <a href="https://css-tricks.com/snippets/css/using-font-face/">Self Hosted Fonts</a></p>
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+<section id="section-title">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <h2 class="heading-title">For Section Title</h2>
+                                <p>Use this sample code for page section title to keep the consistency in the title. </p>
+                                <pre class="prettyprint lang-html linenums overflow-auto">
+<span>&lt;</span><span>div</span><span> </span><span>class</span><span>=</span><span>"title-area"</span><span>&gt;</span>
+
+<span>    &lt;</span><span>h6</span><span> </span><span>class</span><span>=</span><span>"arrow-rh-lh"</span><span>&gt;Services&lt;/</span><span>h6</span><span>&gt;</span>
+
+<span>    &lt;</span><span>h1</span><span> </span><span>class</span><span>=</span><span>"title-border"</span><span>&gt;WHAT I DO&lt;/</span><span>h1</span><span>&gt;</span>
+
+<span>    &lt;</span><span>h2</span><span>&gt;What Kind Of Service I’ll Give&lt;/</span><span>h2</span><span>&gt;</span>
+
+<span>    &lt;</span><span>p</span><span>&gt;Creative Solutions with a strategic focus. Picture too and concern has was comfort Ten 
+</span><span>    difficult resembled eagerness nor. Same park bore on be.&lt;/</span><span>p</span><span>&gt;</span>
+
+<span>&lt;/</span><span>div</span><span>&gt;</span>
+                        </pre>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+<section id="basic-padding">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <h2 class="heading-title">For section padding</h2>
+            <p>You can add this helper class to set section <span class="atv">section-padding</span> .
+                <br> tag. See example below:</p>
+            <pre class="prettyprint lang-html linenums overflow-auto">
+&lt;section class=&quot;... section-padding&quot;&gt;</p>
+[YOUR CONTENT]<p><br />&lt;/section&gt;</pre>
+            <p> <span class="label label-danger">Note</span> Use this helper class to maintain all page section spacing. You can also use section classes like (service-area) <span class="atv">......-area</span> to increase or dicrease specific padding top and bottom if you need . </p>
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+
+<section id="basic-background">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <h2 class="heading-title">For Background color</h2>
+             <p>You can use color in the background. simply add <span class="atv">.white-bg</span> or <span class="atv">.gray-bg</span> (or any color you want) class where you want to use. See example below: </p>
+            <pre class="prettyprint lang-html linenums overflow-auto">&lt;section class=&quot;gray-bg&quot;&gt;
+[YOUR CONTENT]<br />&lt;/section&gt;</pre>
+            <p> <span class="label label-danger">Note</span> We include 2 background color helper class in our template <span class="atv">white-bg, gray-bg</span> You can add unlimited background color class according to your needs </p>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+<section id="basic-components">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <h2 class="heading-title">Bootstrap Components</h2>
+                                <p>
+                                  Bootstrap has a wonderfull documentation on following components:
+                                </p>
+                                <ul>
+                                  <li>
+                                      <a href="https://getbootstrap.com/docs/4.1/utilities/text/#text-alignment" target="black">Text Alignments</a>
+                                  </li>
+                                  <li>
+                                      <a href="https://getbootstrap.com/docs/4.1/components/alerts/" target="black">Alerts</a>
+                                  </li>
+                                  <li>
+                                      <a href="https://getbootstrap.com/docs/4.1/components/badge/" target="black">Badges</a>
+                                  </li>
+                                  <li>
+                                      <a href="https://getbootstrap.com/docs/4.1/components/carousel/" target="black">Carousel</a>
+                                  </li>
+                                  <li>
+                                      <a href="https://getbootstrap.com/docs/4.1/layout/grid/">Columns</a>
+                                  </li>
+                                  <li>
+                                      <a href="https://getbootstrap.com/docs/4.1/content/tables/">Tables</a>
+                                  </li>
+                                  <li>
+                                      <a href="https://getbootstrap.com/docs/4.1/components/buttons/" target="black">Buttons</a>
+                                  </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+<section id="basic-form">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <h2 class="heading-title">For Contact Form</h2>
+                                            <p>Replace dummy email with your email in mail.php to get your contact-form working</p>
+            <pre class="prettyprint lang-html linenums overflow-auto"><p>$ToEmail = 'demo123@gmail.com';</p></pre>
+            <br>
+            <p><em>Note: </em>Don't forget to change dummy <b>site-key</b> with your site-key to get your google captcha working</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+<section id="basic-carousel">
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12">
+                            <h2 class="heading-title">For Owl Carousel 2 slider</h2>
+                            <p>This excellent carousel slider can be controlled jQuery Option, Class and Event.</p>
+            <p>Find the full online <a href="https://owlcarousel2.github.io/OwlCarousel2/"> Owl Carousel 2 documentation</a>.</p>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+<section id="basic-support">
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12">
+                            <h2 class="heading-title">Browser Support</h2>
+                            <p>Supports all major Browsers like Google Chrome, Mozilla Firefox, Safari, Opera, Internet Explorer 9 and above.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+<section id="basic-log">
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12">
+                            <h2 class="heading-title">Change Log</h2>
+                             <h4>Version 1.0</h4>
+                             <p>- Initial Release</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+<section id="basic-source">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12">
+                            <h2 class="heading-title">Source & Credits</h2>
+                             <p>All images and videos are for preview purposes only and are not included in the download files. Images are of copyrights under Creative Commons CC0.</p>
+                <br>
+                <h4>Images</h4>
+                <ul>
+                    <li>unsplash <a href="https://unsplash.com/">unsplash</a></li>
+                    <li>shutterstock <a href="https://www.shutterstock.com/">shutterstock</a></li>
+                    <li>freepik <a href="http://www.freepik.com/">freepik</a></li>
+                    <li>Pexels <a href="https://www.pexels.com/">Pexels</a></li>
+                    <li>pixabay <a href="https://pixabay.com/">pixabay</a></li>
+                </ul>
+                <br>
+                <br>
+                <h4>Scripts</h4>
+                <ul>
+                    <li><a href="https://jquery.com/">Jquery</a></li>
+                    <li><a href="https://owlcarousel2.github.io/OwlCarousel2/">OwlCarousel 2</a></li>
+                    <li><a href="http://veno.es/venobox/">venobox</a></li>
+                    <li><a href="https://dimsemenov.com/plugins/magnific-popup/">Magnific Popup</a></li>
+                    <li><a href="https://popper.js.org/">popper</a></li>
+                    <li><a href="https://kingrayhan.github.io/LineProgressbar/">LineProgressbar</a></li>
+                    <li><a href="https://isotope.metafizzy.co/">isotope</a></li>
+                    <li><a href="https://github.com/imakewebthings/waypoints">WayPoint</a></li>
+                </ul>
+                <br>
+                <br>
+                <h4>CSS & Fonts</h4>
+                <ul>
+                    <li><a href="http://getbootstrap.com/">Bootstrap</a></li>
+                    <li><a href="http://fortawesome.github.io/Font-Awesome/">Font Awesome</a></li>
+                    <li><a href="https://www.google.com/fonts">Google Fonts</a></li>
+                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+<section id="rate-item">
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12">
+                            <h2 class="heading-title">How to rate this Template</h2>
+                             <p>Please do rate us if you like our theme and support. We look forward to your valuable review. For rating visit: <a href="http:/themeforest.net/user/graphicplate/portfolio">http://themeforest.net/downloads</a> and find "Rate this item" below the download button and rate out the theme. Advance Thanks in Prospect!<br>
+            </p>
+            <div class="rate-img"> <img src="images/rate.png" alt="logo"> </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <p>Designed and built with love by <a href="http:/themeforest.net/user/graphicplate/portfolio">Graphicplate</a></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+            </div>
+        </div><!-- end main -->
+    </div><!-- end wrapper -->
+    <!-- END SITE -->
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+        <script src="js/prettify.js"></script>
+    <script src="js/plugins.js"></script>
+
+</body>
+
+</html>
