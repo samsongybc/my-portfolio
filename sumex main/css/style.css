@@ -888,7 +888,7 @@ button.active-work {
 
 .portfolio-area {
   column-count: 3;
-  column-gap: 30px;
+  column-/* gap: 30px; */
 }
 
 .portfolio-single:hover::after {
@@ -2821,4 +2821,505 @@ Custom Text Logo Styles
 
 .footer-text-logo:hover .logo-accent {
   color: #1616db;
+}
+
+/* ============================================
+   Hero Section Background Image
+   ============================================ */
+
+/* Add background image to hero section */
+#hero-section {
+  position: relative;
+  background-image: url('../img/hero-bg.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* Dark overlay for text readability */
+#hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(22, 22, 219, 0.85) 0%, rgba(0, 0, 0, 0.75) 100%);
+  z-index: 1;
+}
+
+/* Ensure content appears above overlay */
+#hero-section .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* Make text white and readable */
+#hero-section .hero-text h1,
+#hero-section .hero-text h4,
+#hero-section .hero-text p {
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Hero name glow effect */
+#hero-section .hero-name {
+  color: #ffffff;
+  text-shadow: 0 0 20px rgba(0, 212, 255, 0.5), 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Animated title color */
+#hero-section .changeTitle {
+  color: #00d4ff;
+  text-shadow: 0 0 10px rgba(0, 212, 255, 0.7);
+}
+
+/* Scroll down text */
+#hero-section .scroll-down span {
+  color: #ffffff;
+}
+
+/* Mobile: Remove parallax effect */
+@media only screen and (max-width: 768px) {
+  #hero-section {
+    background-attachment: scroll;
+  }
+}
+
+/* ============================================
+   Remove Portfolio Hover Tooltips
+   ============================================ */
+
+/* ============================================
+   Portfolio Hover - Hide Text, Show Buttons
+   ============================================ */
+
+/* Hide title and description on hover, but keep buttons */
+.portfolio-single:hover .portfolio-text h4,
+.portfolio-single:hover .portfolio-text > span {
+  display: none !important;
+}
+
+/* Make sure portfolio-text box is visible for buttons */
+.portfolio-single:hover .portfolio-text {
+  visibility: visible !important;
+  opacity: 1 !important;
+  bottom: 33px;
+}
+
+/* Ensure buttons are always visible */
+.portfolio-single:hover .portfolio-links {
+  visibility: visible !important;
+  opacity: 1 !important;
+  display: flex !important;
+}
+
+/* Style improvements for buttons */
+.portfolio-links {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.portfolio-btn {
+  background: #1616db;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: all 0.3s;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.portfolio-btn:hover {
+  background: #00d4ff;
+  color: #212121;
+  transform: translateY(-2px);
+}
+
+.portfolio-btn i {
+  font-size: 14px;
+}
+
+/* ============================================
+   Hide Portfolio Background Boxes - Show Only Buttons
+   ============================================ */
+
+/* Completely hide the white background box */
+.portfolio-single:hover .portfolio-text {
+  background: transparent !important;
+  width: auto !important;
+  height: auto !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  bottom: 20px !important;
+}
+
+/* Position buttons at the bottom center */
+.portfolio-links {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  background: transparent !important;
+}
+
+/* Make buttons float without background box */
+.portfolio-btn {
+  background: rgba(22, 22, 219, 0.95) !important;
+  color: white !important;
+  padding: 10px 20px !important;
+  border-radius: 25px !important;
+  text-decoration: none !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  transition: all 0.3s !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3) !important;
+  border: 2px solid rgba(255, 255, 255, 0.2) !important;
+}
+
+.portfolio-btn:hover {
+  background: rgba(0, 212, 255, 0.95) !important;
+  color: #212121 !important;
+  transform: translateY(-3px) !important;
+  box-shadow: 0 6px 20px rgba(0, 212, 255, 0.4) !important;
+  border-color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.portfolio-btn i {
+  font-size: 14px !important;
+}
+
+
+/* ============================================
+   Modern Portfolio Card Layout
+   ============================================ */
+
+/* Projects Grid Container */
+.projects-grid {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  /* gap: 30px; */
+}
+
+/* Project Card Wrapper */
+.project-card-wrapper {
+  padding: 0 15px;
+  margin-bottom: 30px;
+}
+
+/* Project Card */
+.project-card {
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(22, 22, 219, 0.2);
+}
+
+/* Project Image Container */
+.project-image {
+  position: relative;
+  width: 100%;
+  height: 280px;
+  overflow: hidden;
+  background: #000;
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover .project-image img {
+  transform: scale(1.1);
+}
+
+/* Project Overlay with Tech Icons */
+.project-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(22, 22, 219, 0.9) 0%, rgba(0, 0, 0, 0.8) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.project-card:hover .project-overlay {
+  opacity: 1;
+}
+
+/* Tech Icons in Overlay */
+.tech-icons {
+  display: flex;
+  /* gap: 20px; */
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.tech-icons img {
+  width: 50px;
+  height: 50px;
+  filter: brightness(0) invert(1);
+  transition: transform 0.3s ease;
+}
+
+.tech-icons img:hover {
+  transform: scale(1.2) rotate(5deg);
+}
+
+.tech-icons .icon-text {
+  color: white;
+  font-weight: 700;
+  font-size: 18px;
+  padding: 8px 15px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  backdrop-filter: blur(10px);
+}
+
+/* Project Content */
+.project-content {
+  padding: 25px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-content h3 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #212121;
+  margin-bottom: 15px;
+  font-family: 'Rubik', sans-serif;
+}
+
+.project-content p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #666;
+  margin-bottom: 20px;
+  flex-grow: 1;
+}
+
+/* Tech Badges */
+.tech-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.tech-badges .badge {
+  background: #f0f0f0;
+  color: #1616db;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.tech-badges .badge:hover {
+  background: #1616db;
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* Project Buttons */
+.project-buttons {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.btn-primary,
+.btn-secondary {
+  padding: 12px 24px;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+  flex: 1;
+  justify-content: center;
+  min-width: 140px;
+}
+
+.btn-primary {
+  background: #1616db;
+  color: white;
+  border: 2px solid #1616db;
+}
+
+.btn-primary:hover {
+  background: transparent;
+  color: #1616db;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(22, 22, 219, 0.3);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: #212121;
+  border: 2px solid #ddd;
+}
+
+.btn-secondary:hover {
+  background: #212121;
+  color: white;
+  border-color: #212121;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn-primary i,
+.btn-secondary i {
+  font-size: 14px;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 991px) {
+  .project-card-wrapper {
+    padding: 0 15px;
+  }
+  
+  .project-image {
+    height: 240px;
+  }
+  
+  .tech-icons img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .projects-grid {
+    /* gap: 20px; */
+  }
+  
+  .project-card-wrapper {
+    margin-bottom: 20px;
+  }
+  
+  .project-image {
+    height: 200px;
+  }
+  
+  .project-content {
+    padding: 20px;
+  }
+  
+  .project-content h3 {
+    font-size: 20px;
+  }
+  
+  .project-content p {
+    font-size: 14px;
+  }
+  
+  .tech-icons {
+    gap: 15px;
+  }
+  
+  .tech-icons img {
+    width: 35px;
+    height: 35px;
+  }
+  
+  .btn-primary,
+  .btn-secondary {
+    padding: 10px 18px;
+    font-size: 13px;
+    min-width: 120px;
+  }
+}
+/* ============================================
+   Fix Portfolio Grid Layout
+   ============================================ */
+
+/* Remove the gap from projects-grid and use Bootstrap's grid system */
+.projects-grid {
+  margin-top: 50px;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+/* Ensure proper column behavior */
+.project-card-wrapper {
+  padding: 0 15px;
+  margin-bottom: 30px;
+  display: flex;
+}
+
+/* Make sure cards fill the height */
+.project-card {
+  width: 100%;
+}
+
+/* Override any conflicting flex properties */
+#portfolio-section .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Ensure proper responsive breakpoints */
+@media (min-width: 992px) {
+  .project-card-wrapper.col-lg-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .project-card-wrapper.col-md-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 767px) {
+  .project-card-wrapper {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+/* ============================================
+
+/* ============================================
+   Hide Price Section Only
+   ============================================ */
+
+/* Hide Price section completely - removed from portfolio */
+#price-section {
+  display: none !important;
 }
