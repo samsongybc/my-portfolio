@@ -493,7 +493,7 @@ html .scroll-down {
 .about-img {
   position: relative;
   margin-top: 5px;
-  background: url(../img/about-img.jpg);
+  background: url(../img/skill-bg.jpg);
   height: 508px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -771,7 +771,7 @@ html .scroll-down {
 }
 
 .skill-img {
-  background: url(../img/about-img.jpg);
+  background: url(../img/skill-bg.jpg);
   height: 559px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -3321,5 +3321,41 @@ Custom Text Logo Styles
 
 /* Hide Price section completely - removed from portfolio */
 #price-section {
+  display: none !important;
+}
+
+/* ============================================
+   Hide Percentage Symbols on Skill Bars
+   ============================================ */
+
+/* Hide the percentage text that appears on skill bars */
+.line-progressbar .progressbar-text {
+  display: none !important;
+}
+
+/* Alternative: If the above doesn't work, try this */
+.skill-progressbar .line-progressbar span {
+  display: none !important;
+}
+
+/* ============================================
+   FORCE Hide ALL Percentage Text
+   ============================================ */
+
+/* Hide the percentage counter element */
+.percentCount {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+}
+
+/* Hide any text inside progress bars */
+.line-progressbar .percentCount,
+.progressbar .percentCount {
+  display: none !important;
+}
+
+/* Ensure no text appears in progressbar */
+.skill-progressbar .percentCount {
   display: none !important;
 }

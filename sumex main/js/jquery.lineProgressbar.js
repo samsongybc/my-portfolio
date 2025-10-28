@@ -73,7 +73,7 @@
                 progressFill.css('width', options.percentage + '%')
                 $(el)
                     .find('.percentCount')
-                    .text(Math.round(options.percentage) + '%')
+                    .text(Math.round(options.percentage))
             }
         })
     }
